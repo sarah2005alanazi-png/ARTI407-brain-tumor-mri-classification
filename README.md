@@ -27,10 +27,10 @@ This project classifies brain MRI images into four classes (glioma, meningioma, 
 | ResNet50 (frozen) | 0.8681 | 0.8655 | 44 |
 | VGG16 (frozen) | 0.8212 | 0.8143 | 67 |
 
-Over three independent runs of the same code, the accuracy of the fine-tuned VGG16 and ResNet50 was 92.7 ± 0.4% and 91.9 ± 0.6%, so their difference is within run-to-run variation. Results change slightly between runs because GPU training is not fully deterministic. The full table is in `results/model_comparison.csv` and the figures are in `results/figures/`.
+Over three independent runs of the same code, the accuracy of the fine-tuned VGG16 and ResNet50 was 92.7 ± 0.4% and 91.9 ± 0.6%, so their difference is within run-to-run variation. Results change slightly between runs because GPU training is not fully deterministic. The full table is in `results/model_comparison.csv` and the figures are the `fig_*.png` files in the repository root.
 
 ## How to run
-The notebook was run on **Kaggle** (GPU T4 x2, Internet on, to download the ImageNet weights) with the dataset above attached. Open `notebook/ARTI407_Brain_Tumor_MRI_Classification.ipynb`, attach the dataset, and run all cells from top to bottom (about 40 minutes). The dataset path in Step 1 (`/kaggle/input/datasets/masoudnickparvar/brain-tumor-mri-dataset`) must be changed if the notebook is run outside Kaggle. Required packages are in `requirements.txt`.
+The notebook was run on **Kaggle** (GPU T4 x2, Internet on, to download the ImageNet weights) with the dataset above attached. Open `ARTI407_Brain_Tumor_MRI_Classification.ipynb`, attach the dataset, and run all cells from top to bottom (about 40 minutes). The dataset path in Step 1 (`/kaggle/input/datasets/masoudnickparvar/brain-tumor-mri-dataset`) must be changed if the notebook is run outside Kaggle. Required packages are in `requirements.txt`.
 
 ## Limitations
 - The test set comes from a different distribution than the training folder, which explains the gap between validation and test accuracy.
