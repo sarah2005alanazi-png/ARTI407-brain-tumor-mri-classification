@@ -1,0 +1,6 @@
+model,accuracy,precision,recall,f1_score,tumors_missed_as_notumor
+VGG16_finetuned,0.9256,0.9298,0.9256,0.9237,39
+ResNet50_finetuned,0.925,0.9326,0.925,0.9231,22
+CNN_scratch,0.8812,0.8939,0.8812,0.8798,93
+ResNet50_transfer,0.8681,0.8768,0.8681,0.8655,44
+VGG16_transfer,0.8212,0.8283,0.8212,0.8143,67
